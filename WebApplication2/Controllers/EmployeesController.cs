@@ -17,6 +17,7 @@ namespace WebApplication2.Controllers
         // GET: Employees
         public ActionResult Index()
         {
+            //this is a comment
             var employees = db.Employees.Include(e => e.Employee1);
             return View(employees.ToList());
         }
